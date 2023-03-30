@@ -5,17 +5,19 @@
 }
 
 .quote__img {
-  width: 20%;
+  width: 30%;
   max-width: 100px;
   height: max-content;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .quote__description {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
 
 .quote__content {
@@ -30,4 +32,89 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--primary);
+}
+
+.quote_big::before,
+.quote_big::after {
+  content: url("../assets/img/quotes.svg");
+  position: absolute;
+  top: 24px;
+}
+
+.quote_big::before {
+  left: 16px;
+}
+
+.quote_big::after {
+  transform: rotate(180deg);
+  right: 16px;
+}
+
+.quote_big {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  margin-top: 90px;
+}
+
+.quote_big > .quote__description {
+  box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+  border-radius: 32px;
+  padding: 80px 15px 16px;
+}
+
+.quote_big > .quote__img {
+  width: 40%;
+  position: absolute;
+  top: -58px;
+  max-width: 140px;
+}
+
+.quote_mini:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+@media all and (min-width:1200px) {
+  .quote_big {
+      flex-direction: row;
+      text-align: left;
+      padding: 15px 0;
+  }
+
+  .quote_big > .quote__description {
+      box-shadow: none;
+      padding: 0 16px;
+  }
+
+  .quote_big > .quote__img {
+      position: static;
+      align-self: flex-start;
+  }
+
+  .quote_big::before,
+  .quote_big::after {
+      content: url('../assets/img/quotes-desktop.svg');
+      position: absolute;
+  }
+  
+  .quote_big::before {
+      top: 0px;
+      left: 140px;
+  }
+  
+  .quote_big::after {
+      transform: rotate(180deg);
+      right: 20px;
+      bottom: 20px;
+  }
+
+  .quote_mini:nth-child(1) {
+      flex-direction: row-reverse;
+  }
+
+  .quote_mini:nth-child(2) {
+      flex-direction: row;
+  }
 }

@@ -3,55 +3,9 @@
     padding: 27px 0 36px 0;
 }
 
-.quotes__wrapper {
-    padding: 0 16px;
-}
-
 .quotes__mini-quotes {
     display: flex;
     flex-direction: column;
-}
-
-.quotes__wrapper  > .quote:nth-child(2)::before,
-.quotes__wrapper  > .quote:nth-child(2)::after {
-    content: url('../assets/img/quotes.svg');
-    position: absolute;
-    top: 24px;
-}
-
-.quotes__wrapper  > .quote:nth-child(2)::before {
-    left: 16px;
-}
-
-.quotes__wrapper  > .quote:nth-child(2)::after {
-    transform: rotate(180deg);
-    right: 16px;
-}
-
-.quotes__wrapper  > .quote:nth-child(2) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-    margin-top: 90px;
-}
-
-.quotes__wrapper  > .quote:nth-child(2) > .quote__description {
-    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
-    border-radius: 32px;
-    padding: 80px 15px 16px;
-}
-
-.quotes__wrapper  > .quote:nth-child(2) > .quote__img {
-    width: 40%;
-    position: absolute;
-    top: -58px;
-    max-width: 140px;
-}
-
-.quotes__mini-quotes > .quote:nth-child(2) {
-    flex-direction: row-reverse;
 }
 
 @media all and (min-width:890px) {
@@ -62,64 +16,8 @@
 }
 
 @media all and (min-width:1200px) {
-    .quotes__wrapper {
-        padding: 0 0 0 70px;
-    }
-
-    .quotes__wrapper  > .quote:nth-child(2) {
-        flex-direction: row;
-        text-align: left;
-        padding: 15px 0;
-    }
-
-    .quotes__wrapper  > .quote:nth-child(2) > .quote__description {
-        box-shadow: none;
-        padding: 0 16px;
-    }
-
-    .quotes__wrapper  > .quote:nth-child(2) > .quote__img {
-        position: static;
-        align-self: flex-start;
-    }
-
-    .quotes__wrapper  > .quote:nth-child(2)::before,
-    .quotes__wrapper  > .quote:nth-child(2)::after {
-        content: url('../assets/img/quotes-desktop.svg');
-        position: absolute;
-    }
-    
-    .quotes__wrapper  > .quote:nth-child(2)::before {
-        top: 0px;
-        left: 140px;
-    }
-    
-    .quotes__wrapper  > .quote:nth-child(2)::after {
-        transform: rotate(180deg);
-        right: 20px;
-        bottom: 20px;
-    }
-
-    .quotes__mini-quotes {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .quotes__mini-quotes > .quote:nth-child(1) {
-        flex-direction: row-reverse;
-    }
-
-    .quotes__mini-quotes > .quote:nth-child(2) {
-        flex-direction: row;
-    }
-
     .quotes {
         width: 50%;
         padding: 0;
-    }
-}
-
-@media all and (min-width:1440px) {
-    .quotes__wrapper {
-        padding: 0 0 0 130px;
     }
 }
