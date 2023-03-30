@@ -1,0 +1,21 @@
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 176px;
+    text-align: center;
+}
+
+.intro-card__img:hover circle,
+.intro-card__img:hover path,
+.intro-card__img:hover rect {
+    stroke: #00C368;
+}
+
+.intro-card__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary);
+}

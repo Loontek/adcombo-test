@@ -1,11 +1,14 @@
 @import './src/styles/colors';
 @import './src/styles/header';
+@import './src/styles/navigation';
 @import './src/styles/intro';
+@import './src/styles/intro-card';
 @import './src/styles/slider';
 @import './src/styles/advantages.css';
 @import './src/styles/advantage.css';
 @import './src/styles/quotes';
 @import './src/styles/quote';
+@import './src/styles/button';
 
 * {
   margin: 0;
@@ -24,22 +27,75 @@ body {
 }
 
 .wrapper {
+  width: 100%;
+  max-width: 1920px;
   padding: 0 16px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--primary);
-}
-
+h1,
 h2 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.8rem;
   text-align: center;
   color: var(--primary);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__wrapper::before,
+.quotes__wrapper::before {
+  content: "";
+  display: block;
+  width: 60%;
+  max-width: 184px;
+  height: 4px;
+  background: #00c368;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+@media all and (min-width:890px) {
+  h1 {
+  font-size: 4.0rem;
+  line-height: 4.7rem;
+  }
+  
+  h2 {
+  font-size: 4.0rem;
+  line-height: 4.7rem;
+  }
+
+  .two-columns {
+    padding: 100px 0 90px 0;
+  }
+
+  .two-columns__wrapper {
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .wrapper {
+    padding: 0 70px;
+  }
+}
+
+@media all and (min-width:1440px) {
+  .wrapper {
+    padding: 0 130px;
+  }
 }

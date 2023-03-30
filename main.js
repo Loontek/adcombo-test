@@ -6,20 +6,8 @@ console.log(accordion)
 
 accordion.addEventListener('click', (e)=> {
   if(!e.target.classList.contains('advantage__title')) return;
-
-  if(e.target.parentNode.classList.contains('advantage_active')) {
-    setTimeout(()=>{
-      e.target.parentNode.classList.remove('advantage_active');
-      e.target.parentNode.classList.remove('advantage_closing');
-    },1000)
-
-    e.target.parentNode.classList.add('advantage_closing');
-
-    return
-  }
-
-  e.target.parentNode.classList.add('advantage_active');
-  // e.target.parentNode.classList.`toggle`('advantage_active');
+  
+  e.target.parentNode.parentNode.classList.toggle('advantage_active');
 })
 
 // Slider
