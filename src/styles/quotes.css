@@ -20,4 +20,9 @@
         width: 50%;
         padding: 0;
     }
+
+    .quotes__mini-quotes {
+        flex-direction: row;
+        gap: 30px;
+    }
 }
