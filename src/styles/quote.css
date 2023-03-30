@@ -110,6 +110,10 @@
       bottom: 20px;
   }
 
+  .quote_mini {
+    width: 50%;
+  }
+
   .quote_mini:nth-child(1) {
       flex-direction: row-reverse;
   }
