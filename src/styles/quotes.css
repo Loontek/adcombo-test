@@ -14,7 +14,7 @@
 
 .quotes__wrapper  > .quote:nth-child(2)::before,
 .quotes__wrapper  > .quote:nth-child(2)::after {
-    content: url(./src/assets/img/quotes.svg);
+    content: url('../assets/img/quotes.svg');
     position: absolute;
     top: 24px;
 }
@@ -84,7 +84,7 @@
 
     .quotes__wrapper  > .quote:nth-child(2)::before,
     .quotes__wrapper  > .quote:nth-child(2)::after {
-        content: url(./src/assets/img/quotes-desktop.svg);
+        content: url('../assets/img/quotes-desktop.svg');
         position: absolute;
     }
     
@@ -106,11 +106,9 @@
 
     .quotes__mini-quotes > .quote:nth-child(1) {
         flex-direction: row-reverse;
-        /* flex-direction: row; */
     }
 
     .quotes__mini-quotes > .quote:nth-child(2) {
-        /* flex-direction: row-reverse; */
         flex-direction: row;
     }
 

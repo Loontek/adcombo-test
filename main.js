@@ -1,8 +1,7 @@
 import './style.css';
+import control from './src/assets/img/control.svg';
 
-const accordion = document.querySelector('.advantages__list')
-
-console.log(accordion)
+const accordion = document.querySelector('.advantages__list');
 
 accordion.addEventListener('click', (e)=> {
   if(!e.target.classList.contains('advantage__title')) return;
@@ -20,7 +19,7 @@ $(document).ready(function(){
     pagerCustom: '#bx-pager',
     nextSelector: '#slider-next',
     prevSelector: '#slider-prev',
-    nextText: `<img src="./src/assets/img/control.svg" alt="next control">`,
-    prevText: `<img src="./src/assets/img/control.svg" alt="prev control">`,
+    nextText: `<img src="${control}" alt="next control">`,
+    prevText: `<img src="${control}" alt="prev control">`,
   });
 });
