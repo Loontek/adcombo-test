@@ -1,0 +1,33 @@
+.quote {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.quote__img {
+  width: 20%;
+  max-width: 100px;
+  height: max-content;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.quote__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote__content {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--primary);
+}
+
+.quote__author {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--primary);
+}

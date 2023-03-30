@@ -1,10 +1,45 @@
+@import './src/styles/colors';
+@import './src/styles/header';
+@import './src/styles/intro';
+@import './src/styles/slider';
+@import './src/styles/advantages.css';
+@import './src/styles/advantage.css';
+@import './src/styles/quotes';
+@import './src/styles/quote';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+html {
+  height: 100vh;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
   height: 100vh;
 }
 
+.wrapper {
+  padding: 0 16px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: var(--primary);
+}

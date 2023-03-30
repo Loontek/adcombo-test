@@ -1,0 +1,65 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e7ebf0;
+  max-height: 54px;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.advantage:last-child {
+  border: none;
+  padding: 0;
+}
+
+.advantage__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--primary);
+}
+
+.advantage__title::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("./src/assets/img/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+}
+
+.advantage_active {
+  max-height: 500px;
+}
+
+.advantage_closing {
+  max-height: 54px;
+}
+
+.advantage_active .advantage__title {
+  color: #00c368;
+}
+
+.advantage_active .advantage__title::after {
+  transform: rotate(180deg);
+}
+
+.advantage_active .advantage__description {
+  display: block;
+}
+
+.advantage__description {
+  display: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #2e3a59;
+  width: 90%;
+}

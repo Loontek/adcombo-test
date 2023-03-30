@@ -1,0 +1,31 @@
+.advantages {
+  width: 100%;
+  padding: 20px 0 30px 0;
+}
+
+.advantages::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #00c368;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.advantages__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  list-style: none;
+}
