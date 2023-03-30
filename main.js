@@ -8,6 +8,8 @@ accordion.addEventListener('click', (e)=> {
   if(!e.target.classList.contains('advantage__title')) return;
 
   for(let item of accordionItems) {
+    if(item === e.target.parentNode.parentNode) continue;
+
     item.classList.remove('advantage_active');
   }
   
