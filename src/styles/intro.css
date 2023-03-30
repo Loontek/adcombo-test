@@ -58,7 +58,6 @@
 
 @media all and (min-width:690px) {
     .intro {
-        /* background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%); */
         background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%),
             url('../assets/img/pattern.jpg') no-repeat left bottom,
             url('../assets/img/pattern2.jpg') no-repeat right top;
@@ -94,11 +93,6 @@
 
 @media all and (min-width:1200px) {
     .intro {
-        /* background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%),
-            url('../assets/img/pattern.jpg') no-repeat left bottom,
-            url('../assets/img/pattern2.jpg') no-repeat right top;
-        
-        background-attachment: fixed; */
         background-size: auto;
     }
 }
