@@ -61,6 +61,7 @@
   line-height: 1.9rem;
   color: var(--primary);
   gap: 5px;
+  cursor: pointer;
 }
 
 .advantage__title::after {
@@ -72,6 +73,7 @@
   background-repeat: no-repeat;
   background-size: 1.25rem;
   content: "";
+  cursor: pointer;
 }
 
 .advantage_active .advantage__title {
