@@ -42,8 +42,8 @@
     gap: 20px;
 }
 
-.row_1,
-.row_3 {
+.row:nth-child(1),
+.row:nth-child(3) {
     width: 50%;
 }
 
